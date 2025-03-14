@@ -1,19 +1,23 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    text-align: center; 
 }
 
 .navbar {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
+    background-image: url("../images/subpage_background.png");
+    background-size: cover;
+    border: 5px dotted white;
+    color: coral;
+    padding: 40px;
+    font-size: 20px;
 
+}
 nav a {
-    color: white;
-    margin: 0 10px;
+    color: black;
+    margin: 0 40px;
     text-decoration: none;
+    
 }
 
 .order-form {
@@ -51,5 +55,24 @@ button {
 }
 
 button:hover {
-    background-color: #ff4500;
+    background-color: yellow;
+    color: purple;
+    font-size: 16px
+}
+
+.footer {
+    font-weight: bold;
+    color: white;
+    background-image: url("../images/footer-background.jpg");
+    background-size:contain;
+    padding: 5px 5px 0px 5px;
+    margin-top: 50px;
+}
+
+#company_address {  
+    text-align:center;
+}
+
+#company_name {
+    text-align: end;
 }

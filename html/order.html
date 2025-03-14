@@ -18,32 +18,43 @@
     </div>
 
     <div class="order-form">
-        <h2>Place Your Order</h2>
+        <h2>Enter Your Order!</h2>
         <form id="orderForm">
             <label for="name">Name: </label>
             <input type="text" id="name" required><br><br>
+            
+            <label for="number">Phone Number: </label>
+            <input type="tel" id="number" required><br><br>
 
             <label for="coffeeType">Coffee Type: </label><br>
-            <input type="radio" id="turkish" name="coffeeType" value="Turkish Coffee" required> Turkish Coffee<br>
-            <input type="radio" id="american" name="coffeeType" value="American Coffee"> American Coffee<br>
-            <input type="radio" id="latte" name="coffeeType" value="Iced Latte"> Iced Latte<br><br>
-
-            <label for="extras">Extras: </label><br>
-            <input type="checkbox" id="extraCoffee" value="Extra Coffee"> Extra Coffee ($1.50)<br>
-            <input type="checkbox" id="whippedCream" value="Whipped Cream"> Whipped Cream ($2)<br>
-            <input type="checkbox" id="extraCaramel" value="Extra Caramel"> Extra Caramel ($3)<br><br>
+            <input type="radio" id="yunnan" name="coffeeType" value="Yunnan Coffee"> Yunnan Coffee<br>
+            <input type="radio" id="espresso" name="coffeeType" value="Espresso"> Espresso<br>
+            <input type="radio" id="americano" name="coffeeType" value="Americano"> Americano<br>
+            <input type="radio" id="latte" name="coffeeType" value="Latte"> Latte<br><br>
 
             <label for="size">Size: </label>
             <select id="size">
-                <option value="small">Small ($1.50)</option>
-                <option value="medium">Medium ($2.50)</option>
-                <option value="large">Large ($3.50)</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium (+$1)</option>
+                <option value="large">Large (+$2)</option>
             </select><br><br>
+            
+            <label for="extras">Treats: </label><br>
+            <input type="checkbox" id="cookies" value="Chocolate Chip Cookies"> Chocolate Chip Cookies ($2.50)<br>
+            <input type="checkbox" id="muffins" value="Muffins"> Muffins ($3)<br>
+            <input type="checkbox" id="brownies" value="Brownies"> Brownies ($3.5)<br>
+            <input type="checkbox" id="lemonbars" value="Lemon Bars"> Lemon Bars ($3)<br><br>           
 
-            <button type="submit">Submit Order</button>
+            <button type="submit">Dine in</button>
+            <button type="submit">Take out</button>
         </form>
 
         <div id="orderSummary"></div>
+    </div>
+
+    <div class="footer">
+        <p id="company_address">1111 Baker Street, London Ontario, Canada</p>
+        <p id="company_name">Erika Cafe Co. Ltd.</p>
     </div>
 
     <script src="../js/order.js"></script>
