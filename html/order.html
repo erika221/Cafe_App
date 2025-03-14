@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Café</title>
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Order Your Coffee</h1>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="menu.html" target="_blank">Menu</a>
+            <a href="order.html" target="_blank">Order</a>
+            <a href="contact_us.html" target="_blank">Contact Us</a>
+        </nav>
+    </div>
+
+    <div class="order-form">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <label for="name">Name: </label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="coffeeType">Coffee Type: </label><br>
+            <input type="radio" id="turkish" name="coffeeType" value="Turkish Coffee" required> Turkish Coffee<br>
+            <input type="radio" id="american" name="coffeeType" value="American Coffee"> American Coffee<br>
+            <input type="radio" id="latte" name="coffeeType" value="Iced Latte"> Iced Latte<br><br>
+
+            <label for="extras">Extras: </label><br>
+            <input type="checkbox" id="extraCoffee" value="Extra Coffee"> Extra Coffee ($1.50)<br>
+            <input type="checkbox" id="whippedCream" value="Whipped Cream"> Whipped Cream ($2)<br>
+            <input type="checkbox" id="extraCaramel" value="Extra Caramel"> Extra Caramel ($3)<br><br>
+
+            <label for="size">Size: </label>
+            <select id="size">
+                <option value="small">Small ($1.50)</option>
+                <option value="medium">Medium ($2.50)</option>
+                <option value="large">Large ($3.50)</option>
+            </select><br><br>
+
+            <button type="submit">Submit Order</button>
+        </form>
+
+        <div id="orderSummary"></div>
+    </div>
+
+    <script src="../js/order.js"></script>
+</body>
+</html>
