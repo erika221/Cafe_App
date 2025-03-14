@@ -20,30 +20,42 @@
     <div class="order-form">
         <h2>Enter Your Order!</h2>
         <form id="orderForm">
-            <label for="name">Name: </label>
-            <input type="text" id="name" required><br><br>
-            
-            <label for="number">Phone Number: </label>
-            <input type="tel" id="number" required><br><br>
+            <div class="input-group">
+                <label for="name">Name: </label>
+                <input type="text" id="name" required>
+            </div>
 
-            <label for="coffeeType">Coffee Type: </label><br>
-            <input type="radio" id="yunnan" name="coffeeType" value="Yunnan Coffee"> Yunnan Coffee<br>
-            <input type="radio" id="espresso" name="coffeeType" value="Espresso"> Espresso<br>
-            <input type="radio" id="americano" name="coffeeType" value="Americano"> Americano<br>
-            <input type="radio" id="latte" name="coffeeType" value="Latte"> Latte<br><br>
+            <div class="input-group">
+                <label for="number">Phone Number: </label>
+                <input type="tel" id="number" required>
+            </div>
 
-            <label for="size">Size: </label>
-            <select id="size">
-                <option value="small">Small</option>
-                <option value="medium">Medium (+$1)</option>
-                <option value="large">Large (+$2)</option>
-            </select><br><br>
-            
-            <label for="extras">Treats: </label><br>
-            <input type="checkbox" id="cookies" value="Chocolate Chip Cookies"> Chocolate Chip Cookies ($2.50)<br>
-            <input type="checkbox" id="muffins" value="Muffins"> Muffins ($3)<br>
-            <input type="checkbox" id="brownies" value="Brownies"> Brownies ($3.5)<br>
-            <input type="checkbox" id="lemonbars" value="Lemon Bars"> Lemon Bars ($3)<br><br>           
+            <div class="input-group">
+                <label for="coffeeType">Coffee Type: </label><br>
+                <input type="radio" id="yunnan" name="coffeeType" value="Yunnan Coffee"> Yunnan Coffee ($4) <br>
+                <input type="radio" id="espresso" name="coffeeType" value="Espresso"> Espresso ($3) <br>
+                <input type="radio" id="americano" name="coffeeType" value="Americano"> Americano ($3.5) <br>
+                <input type="radio" id="latte" name="coffeeType" value="Latte"> Latte ($4.5) <br><br>
+            </div>
+
+            <div class="input-group">
+                <label for="size">size: </label>
+                <select id="size">
+                    <option value="Small">small</option>
+                    <option value="medium">medium (+$1) </option>
+                    <option value="large">large (+$2) </option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="treats">Treats: </label><br>
+                <input type="checkbox" id="cookies" value="Chocolate Chip Cookies"> Chocolate Chip Cookies ($2.5)<br>
+                <input type="checkbox" id="muffins" value="Muffins"> Muffins ($3)<br>
+                <input type="checkbox" id="brownies" value="Brownies"> Brownies ($3.5)<br>
+                <input type="checkbox" id="lemonbars" value="Lemon Bars"> Lemon Bars ($3)<br><br>
+            </div>
+
+
 
             <button type="submit">Dine in</button>
             <button type="submit">Take out</button>
